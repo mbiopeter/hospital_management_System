@@ -25,6 +25,7 @@ const Login = () => {
                 navigate('/Dashboard');
             }else{
                 setError('Invalid login credentials!!');
+                console.log(res.data.Login);
             }
         })
         .catch(err => {

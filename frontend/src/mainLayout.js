@@ -126,22 +126,9 @@ const MainLayout = () => {
             setHover('FeedBack');
         }
     }   
-    const [name,setName] = useState();
-    const navigate = useNavigate();
-    useEffect(() => {
-        axios.get('http://localhost:8080/login/')
-        .then(res => {
-            if(res.data.valid){
-                setName(res.data.Username)
-            }else{
-                navigate('/');
-            }
-        })
-        .catch(err => console.log(err));
-    },[])
     return(
         <div style={{width:'100%', height:'100%',display:'flex',flexWrap:'wrap'}}>
-            <UpNav toggleExpand={toggleExpand} userName ={name} ToggleMobileSize={ToggleMobileSize} expand={expand} />
+            <UpNav toggleExpand={toggleExpand} ToggleMobileSize={ToggleMobileSize} expand={expand} />
             <SideNav ActivateHover={ActivateHover} toggleExpand={toggleExpand} ToggleMobileSize={ToggleMobileSize} expand={expand} />
 
             <Routes>
