@@ -1,0 +1,134 @@
+.DiagnosisContainer {
+    width: 80%;
+    height: 100%;
+    background-color: rgb(201, 241, 218);
+}
+
+.DiagnosisContainerHeader {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(141, 213, 172);
+    padding: 0 10px;
+}
+
+.DiagnosisContainerHeader span {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(96, 94, 94);
+}
+
+.IconsContainer {
+    display: flex;
+}
+
+.IconsContainerDisplay {
+    height: 26px;
+    width: 26px;
+    background-color: blue;
+    margin-left: 7px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.IconsContainerDisplay span {
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.SaveDiagnosisIcon {
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.DiagnosisContainerHeaderBody {
+    padding: 0 10px;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    border-bottom: 1px solid rgb(144, 211, 173);
+}
+
+.DiagnosisContainerHeaderBodyCol {
+    width: 40%;
+    height: 100%;
+}
+
+.DiagnosisContainerHeaderBodyColFormControl {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.DiagnosisContainerHeaderBodyColFormControl label {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(96, 94, 94);
+}
+
+.DiagnosisContainerHeaderBodyColFormControl input {
+    width: 50%;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 2px;
+    background-color: transparent;
+    color: rgb(96, 94, 94);
+
+}
+
+.DiagnosisContainerDisplayTable {
+    width: 100%;
+    padding: 5px 10px;
+    height: 45%;
+    overflow-y: auto;
+}
+
+.DiagnosisContainerDisplayTable table {
+    width: 100%;
+}
+
+.DiagnosisContainerDisplayTable table thead {
+    background-color: rgb(103, 204, 170);
+}
+
+.DiagnosisContainerDisplayTable table thead td {
+    color: #000;
+}
+
+.DiagnosisContainerDisplayTable table td {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(96, 94, 94);
+    padding: 5px;
+    border: 1px solid rgb(75, 148, 124);
+}
+
+.DiagnosisContainerDisplayTable table,
+thead,
+tbody,
+tr,
+td {
+    border-collapse: collapse;
+}
+
+.DiagnosisContainerDisplayTableRemoveIcon {
+    font-size: 15px;
+    color: red;
+    margin-left: 5px;
+    cursor: pointer;
+}

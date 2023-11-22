@@ -1,0 +1,197 @@
+.InPatientVisitOverlayer {
+    position: absolute;
+    top: -17vh;
+    right: -1.5vw;
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+    background-color: grey;
+    opacity: .3;
+}
+
+.InPatientVisitContainer {
+    position: absolute;
+    top: 15vh;
+    right: 15vw;
+    width: 50vw;
+    height: 40vh;
+    background-color: #fff;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.InPatientVisitContainerHeader {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #007FFF;
+    justify-content: space-between;
+
+}
+
+.InPatientVisitContainerHeader span {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.CloseInPatientVisitContainerHeader {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.CloseInPatientVisitContainer {
+    font-size: 10px;
+    color: #fff;
+}
+
+.InPatientVisitContainerBody {
+    width: 100%;
+    height: 88%;
+}
+
+.InPatientVisitContainerBodyHeader {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+
+.InPatientVisitContainerBodyHeader span {
+    color: #7b7777;
+    font-size: 16px;
+}
+
+.SaveInPatientVisitIcon {
+    font-size: 25px;
+    color: #007FFF;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.InPatientVisitTypeContainer {
+    width: 100%;
+    height: 30%;
+    background: #fff;
+    margin-top: 2px;
+    display: flex;
+}
+
+.InPatientVisitTypeContainerCol {
+    width: 25%;
+    height: 100%;
+}
+
+.InPatientVisitTypeContainerSubCol {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.InPatientVisitTypeContainerSubCol span {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.InPatientVisitTypeContainerSubCol input,
+select {
+    outline: none;
+    background-color: transparent;
+    font-size: 12px;
+    padding: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid var(--FormInput);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--FormColor);
+    letter-spacing: -0.5px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.InpatientLastVisitContainer {
+    width: 100%;
+    height: 50%;
+}
+
+.InpatientLastVisitContainerHeader {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    box-shadow: 0 0 5px 0 #597ce4;
+}
+
+.InpatientLastVisitContainerHeader span {
+    color: #7b7777;
+    font-size: 14px;
+}
+
+.AddExpandContainer {
+
+    width: 15px;
+    height: 15px;
+    border: 1px solid gray;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+.InPatientVisitTableContainer {
+    width: 100%;
+    height: auto;
+    max-height: 65%;
+    overflow: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.InPatientVisitTableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 5px;
+}
+
+.InPatientVisitTableContainer table thead tr {
+    background-color: #52dff5;
+}
+
+.InPatientVisitTableContainer table thead tr td {
+    font-weight: 700;
+}
+
+.InPatientVisitTableContainer table td {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.InPatientVisitTableContainer table thead td {
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+
+.InPatientVisitTableContainer table tbody td {
+    border-collapse: collapse;
+    border: 1px solid grey;
+}

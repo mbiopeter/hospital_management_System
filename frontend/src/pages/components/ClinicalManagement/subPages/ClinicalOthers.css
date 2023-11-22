@@ -1,0 +1,103 @@
+.ClinicalOthersContainer {
+    width: 85%;
+    transition: 0.3s linear;
+    height: 90vh;
+    background-color: var(--mainBackgroundColor);
+    padding: 0 20px;
+}
+
+.ClinicalOthersContainerHeader {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ClinicalOthersContainerHeaderOne {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ClinicalOthersContainerHeaderOne span {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ClinicalOthersContainerHeaderTwo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ClinicalOthersContainerHeaderTwoHeaders {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(50, 50, 201);
+}
+
+.ClinicalOthersContainerHeaderTwoHeaders {
+    margin-right: 10px;
+}
+
+.ClinicalOthersContainerHeaderTwoLabel {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 20px;
+}
+
+.ClinicalOthersContainerHeaderTwoLabel:last-child {
+    margin-right: 0;
+}
+
+.ClinicalOthersContainerInner {
+    width: 100%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px grey;
+    padding: 0 10px;
+}
+
+.ClinicalOthersContainerInnerMainContainer {
+    width: 100%;
+    height: 91%;
+    display: flex;
+}
+
+.ClinicalOthersContainerInnerMainContainerNav {
+    width: 20%;
+    height: 100%;
+    background-color: rgb(215, 205, 205);
+    box-shadow: 0 0 5px rgb(171, 172, 173);
+}
+
+.ClinicalOthersContainerInnerMainContainerDisplay {
+    width: 80%;
+    height: 100%;
+}
+
+.ClinicalOthersContainerInnerMainContainerNavList {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #e5e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.ClinicalOthersContainerInnerMainContainerNavList span {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(91, 91, 231);
+    cursor: pointer;
+}

@@ -1,0 +1,36 @@
+.PatientVitalsContainerInnerHeader {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PatientVitalsContainerInnerHeaderButtons {
+    width: 19.8%;
+    height: 80%;
+    background-color: rgb(99, 99, 253);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PatientVitalsContainerInnerHeaderButtons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PatientVitalsContainerInnerHeaderButtonsIcon {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.PatientVitalsContainerInnerHeaderButtons span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}

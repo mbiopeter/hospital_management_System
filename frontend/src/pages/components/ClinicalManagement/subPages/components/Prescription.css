@@ -1,0 +1,120 @@
+.PrescriptionContainer {
+    width: 80%;
+    height: 100%;
+    background-color: rgb(201, 241, 218);
+}
+
+.PrescriptionContainerHeader {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(141, 213, 172);
+    padding: 0 10px;
+}
+
+.PrescriptionContainerHeader span {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(96, 94, 94);
+}
+
+.PrescriptionIconContainer {
+    height: 26px;
+    width: 26px;
+    background-color: blue;
+    margin-left: 7px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PrescriptionIcon {
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.PrescriptionContainerBody {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgb(141, 213, 172);
+    flex-wrap: wrap;
+}
+
+.PrescriptionContainerBodyCol {
+    width: 45%;
+    height: 100%;
+
+}
+
+.PrescriptionContainerBodyColFormControl {
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.PrescriptionContainerBodyColFormControl label {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(96, 94, 94);
+}
+
+.PrescriptionContainerBodyColFormControl input {
+    width: 50%;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 2px;
+    background-color: transparent;
+    color: rgb(96, 94, 94);
+}
+
+.PrescriptionContainerDisplay {
+    width: 100%;
+    padding: 5px 10px;
+    height: 45%;
+    overflow-y: auto;
+}
+
+.PrescriptionContainerDisplay table {
+    width: 100%;
+}
+
+.PrescriptionContainerDisplay table thead {
+    background-color: rgb(103, 204, 170);
+}
+
+.PrescriptionContainerDisplay table thead td {
+    color: #000;
+}
+
+.PrescriptionContainerDisplay table td {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(96, 94, 94);
+    padding: 5px;
+    border: 1px solid rgb(75, 148, 124);
+}
+
+.PrescriptionContainerDisplay table,
+thead,
+tbody,
+tr,
+td {
+    border-collapse: collapse;
+}
+
+.RemovePrescriptionIcon {
+    color: red;
+    cursor: pointer;
+}

@@ -1,0 +1,246 @@
+.PaymentCollectionOverlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    opacity: .4;
+    z-index: 5;
+}
+
+.paymentCollectionContainer {
+    position: absolute;
+    top: 30vh;
+    right: 25vw;
+    width: 45vw;
+    height: 42vh;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.paymentCollectionContainerHeader {
+    width: 100%;
+    height: 15%;
+    background-color: #007FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.paymentCollectionContainerHeader span {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.paymentCollectionClose {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.paymentCollectionCloseIcon {
+    font-size: 10px;
+    color: #fff;
+}
+
+.paymentCollectionModeTableContainer {
+    width: 100%;
+    height: 30%;
+    padding: 0 10px;
+}
+
+.paymentCollectionModeTableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.paymentCollectionModeTableContainer table thead {
+    background-color: rgb(204, 211, 204);
+}
+
+.paymentCollectionModeTableContainer table thead tr td {
+    padding: 5px;
+    border: 1px solid grey;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.paymentCollectionModeTableContainer table tbody tr td {
+    padding: 5px;
+    border: 1px solid grey;
+    font-size: 13px;
+}
+
+.paymentCollectionModeTableContainer table tbody tr td input,
+select {
+    width: 70px;
+    outline: none;
+    background-color: transparent;
+    font-size: 12px;
+    padding: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid var(--FormInput);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--FormColor);
+    letter-spacing: -0.5px;
+    border-radius: 2px;
+}
+
+.paymentCollectionModeTableContainer table tbody tr td .plusContainer {
+    width: 30px;
+    height: 25px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.paymentCollectionModeTableContainer table tbody tr td .plusContainer span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 4px;
+}
+
+.paymentSplitBillCollectionContainerSave {
+    width: 100%;
+    padding: 0 10px;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 5px 0 gray;
+}
+
+.toggleSplittedBillContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.toggleSplittedBillContainerIcon {
+    width: 15px;
+    height: 15px;
+    border-radius: 1px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.toggleSplittedBillContainerIcon span {
+    font-size: 14px;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+.SaveSplitedBillIconContainer {
+    width: 30px;
+    height: 25px;
+    background-color: blue;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.SaveSplitedBillIcon {
+    font-size: 20px;
+    color: #fff;
+}
+
+.DisplaySplittedBillContainer {
+    width: 100%;
+    height: 25%;
+    padding: 0 10px;
+    overflow: auto;
+}
+
+.DisplaySplittedBillContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.DisplaySplittedBillContainer table thead {
+    background-color: rgb(204, 211, 204);
+}
+
+.DisplaySplittedBillContainer table thead tr td {
+    padding: 5px;
+    border: 1px solid grey;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.DisplaySplittedBillContainer table tbody tr td {
+    padding: 5px;
+    border: 1px solid grey;
+    font-size: 13px;
+}
+
+.RemoveSplittedBill {
+    font-size: 15px;
+    color: red;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.paymentSplitInfoContainer {
+    width: 100%;
+    padding: 0 10px;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 5px 0 gray;
+    margin-top: 5px;
+}
+
+.paymentSplitInfoContainerCol {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.paymentSplitInfoContainerCol label {
+    font-size: 14px;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.paymentSplitInfoContainerCol input {
+    width: 70px;
+    outline: none;
+    background-color: transparent;
+    font-size: 12px;
+    padding: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid var(--FormInput);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--FormColor);
+    letter-spacing: -0.5px;
+    border-radius: 2px;
+    text-align: center;
+}

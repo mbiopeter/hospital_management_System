@@ -1,0 +1,201 @@
+.PrintRegistrationCardOverlayer {
+    position: absolute;
+    top: -17vh;
+    right: -1.7vw;
+    width: 102vw;
+    height: 100vh;
+    background-color: grey;
+    opacity: .4;
+    z-index: 5;
+}
+
+.PrintRegistrationCardContainer {
+    position: absolute;
+    top: -3%;
+    right: 50%;
+    width: 70vw;
+    height: 70vh;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.PrintRegistrationCardContainerHeader {
+    height: 7%;
+    width: 100%;
+    background-color: var(--HeaderBackground);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+}
+
+.PrintRegistrationCardContainerHeader span {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.ClosePrintRegistrationCardContainer {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.ClosePrintRegistrationCardPatient {
+    font-size: 10px;
+    color: #fff;
+}
+
+.PrintRegistrationCardContainerBody {
+    width: 100%;
+    height: 93%;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PrintRegistrationCardContainerBodyInner {
+    width: 98%;
+    height: 96%;
+    background-color: rgb(69, 67, 67);
+}
+
+.PrintRegistrationCardContainerBodyInnerHeader {
+    width: 100%;
+    height: 12%;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.PrintRegistrationCardContainerBodyInnerHeader span {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.SpanPrintIconContainer {
+    display: flex;
+
+}
+
+.SpanPrintIconContainerIcons {
+    font-size: 20px;
+    margin-left: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.PrintRegistrationCardContainerBodyInnerBody {
+    width: 100%;
+    height: 88%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.ActualRegistrationCard {
+    width: 300px;
+    height: 150px;
+    background-color: #fff;
+}
+
+.ActualRegistrationCardHeader {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ActualRegistrationCardHeader span {
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ActualRegistrationCardBody {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+
+.ActualRegistrationCardBodyCol {
+    width: 50%;
+    height: 100%;
+
+}
+
+.ActualRegistrationCardBodyColIcon {
+    font-size: 100px;
+    color: darkblue;
+}
+
+.CardOne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CardDescription {
+    width: 100%;
+    height: 12px;
+}
+
+.CardDescription span {
+    color: #000;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+@media print {
+
+    .ActualRegistrationCardBody {
+        width: 100%;
+        height: 90%;
+        display: none;
+    }
+
+    .ActualRegistrationCardBodyCol {
+        width: 50%;
+        height: 100%;
+
+    }
+
+    .ActualRegistrationCardBodyColIcon {
+        font-size: 100px;
+        color: darkblue;
+    }
+
+    .CardOne {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .CardDescription {
+        width: 100%;
+        height: 12px;
+    }
+
+    .CardDescription span {
+        color: #000;
+        font-size: 9px;
+        font-weight: bold;
+    }
+
+}

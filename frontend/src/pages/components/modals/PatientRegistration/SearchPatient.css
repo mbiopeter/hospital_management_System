@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --HeaderBackground: #007FFF;
+}
+
+.SearchPatientOverlayer {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: grey;
+    opacity: .3;
+}
+
+.SeachPatientPopContainer {
+    position: absolute;
+    top: 20vh;
+    right: 5vw;
+    width: 75vw;
+    height: 70vh;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.SeachPatientPopContainerHeader {
+    height: 7%;
+    width: 100%;
+    background-color: var(--HeaderBackground);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.SeachPatientPopContainerHeader span {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.CloseSearchPatientContainer {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.CloseSearchPatient {
+    font-size: 10px;
+    color: #fff;
+}
+
+.SearchPatientInputFields {
+    padding: 0 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.SearchPatientCol {
+    width: 33.3%;
+    height: auto;
+}
+
+.SearchPatientCol:first-child {
+    padding-right: 20px;
+}
+
+.SearchPatientCol:last-child {
+    padding-left: 20px;
+}
+
+.searchPatientFormControl {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 0;
+}
+
+.searchPatientFormControl label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--FormColor);
+    letter-spacing: -0.5px;
+}
+
+.searchPatientFormControl input,
+select {
+    width: 60%;
+    outline: none;
+    background-color: transparent;
+    font-size: 10px;
+    padding: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid var(--FormInput);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--FormColor);
+    letter-spacing: -0.5px;
+    border-radius: 3px;
+}
+
+.SearchTableColorsKey {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.ColorRep {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+.SearchTableColorsKey span {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--FormColor);
+    letter-spacing: -0.5px;
+    padding-right: 20px;
+}
+
+.SearchTableColorsKey span:last-child {
+    padding-right: 0;
+}
+
+.SearchPatientTableContainer {
+    width: 100%;
+    margin: 10px 0;
+    overflow: auto;
+    height: 72%;
+    border-top: 2px solid grey;
+}
+
+.SearchPatientTableContainer::-webkit-Scrollbar-thumb {
+    background-color: var(--scrollbarThump);
+}
+
+.SearchPatientTableContainer::-webkit-Scrollbar-track {
+    background-color: var(--scrollbarTruck);
+}
+
+.SearchPatientTableContainer::-webkit-Scrollbar-track:hover {
+    width: 8px;
+}
+
+.SearchPatientTableContainer::-webkit-Scrollbar {
+    width: 5px;
+}
+
+/* DataTableStyles.css */
+.rdt_Table {
+    max-width: 100%;
+    border-collapse: collapse;
+    padding: 0 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+}
+
+.rdt_TableHeader {
+    background-color: #7d7a7a;
+}
+
+.rdt_TableHeader .rdt_TableCol {
+    padding: 8px 16px;
+    border: 2px solid #a29d9d;
+    text-align: left;
+}
+
+.rdt_TableRow {
+    background-color: transparent;
+}
+
+.rdt_TableBody .rdt_TableRow .rdt_TableCell {
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 1000px) {
+    .SearchPatientOverlayer {
+        z-index: 500;
+    }
+
+    .SeachPatientPopContainer {
+        position: fixed;
+        width: 100%;
+        min-height: 93vh;
+        left: -10px;
+        top: 7vh;
+        z-index: 1000;
+
+    }
+
+    .SearchPatientInputFields {
+        flex-wrap: wrap;
+    }
+
+    .SearchPatientCol {
+        width: 100%;
+    }
+
+    .searchPatientFormControl input,
+    select {
+        width: 45%;
+    }
+
+    .SearchPatientCol:first-child {
+        padding-right: 0;
+    }
+
+    .SearchPatientCol:last-child {
+        padding-left: 0;
+    }
+
+    .SearchTableColorsKey {
+        width: 55%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .SearchPatientTableContainer {
+
+        height: auto;
+        overflow-y: auto;
+    }
+}

@@ -1,0 +1,40 @@
+.customInputContainer {
+    position: relative;
+    display: inline-block;
+    width: 76.5%;
+}
+
+.customInputContainer input {
+    width: 100%;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 2px;
+    background-color: transparent;
+    color: rgb(96, 94, 94);
+}
+
+.optionsOverlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: rgb(167, 232, 191);
+    border: 1px solid #53cd76;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.optionsOverlay div {
+    padding: 8px;
+    cursor: pointer;
+    transition: .5s linear;
+}
+
+.optionsOverlay div:hover {
+    background-color: #52e770;
+}

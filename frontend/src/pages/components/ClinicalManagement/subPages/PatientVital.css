@@ -1,0 +1,235 @@
+.PatientVitalsContainer {
+    width: 85%;
+    transition: 0.3s linear;
+    height: 90vh;
+    overflow-y: auto;
+    background-color: var(--mainBackgroundColor);
+    padding: 0 20px;
+}
+
+.PatientVitalsContainerHeader {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PatientVitalsContainerHeader span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(62, 59, 59);
+}
+
+.PatientVitalsContainerHeaderIconContainer {
+    height: 25px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px;
+    background-color: rgb(19, 19, 227);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.PatientVitalsContainerHeaderIconContainerIcon {
+    font-size: 16px;
+    color: #fff;
+}
+
+.PatientVitalsContainerInner {
+    width: 100%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px grey;
+    padding: 0 10px;
+}
+
+.PatientVitalsContainerInnerHeader {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PatientVitalsContainerInnerHeaderButtons {
+    width: 19.8%;
+    height: 80%;
+    background-color: rgb(99, 99, 253);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PatientVitalsContainerInnerHeaderButtons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PatientVitalsContainerInnerHeaderButtonsIcon {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.PatientVitalsContainerInnerHeaderButtons span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.PatientVitalsContainerVitalHeader {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid grey;
+}
+
+.PatientVitalsContainerVitalHeader span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #474646;
+    text-transform: capitalize;
+}
+
+.PatientVitalsContainerVitalBody {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+.PatientVitalsContainerVitalBodyCol {
+    width: 32%;
+    height: 100%;
+}
+
+.PatientVitalsContainerVitalBodyColControl {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    margin-right: 10px;
+}
+
+.PatientVitalsContainerVitalBodyColControl label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--FormColor);
+    letter-spacing: -0.5px;
+}
+
+.PatientVitalsContainerVitalBodyColControl input,
+select {
+    width: 50%;
+    outline: none;
+    background-color: transparent;
+    font-size: 12px;
+    padding: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid var(--FormInput);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--FormColor);
+    border-radius: 3px;
+}
+
+.PatientVitalsContainerDescription {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PatientVitalsContainerDescription label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--FormColor);
+    letter-spacing: -0.5px;
+}
+
+.PatientVitalsContainerDescription input {
+    width: 91.5%;
+    outline: none;
+    background-color: transparent;
+    font-size: 12px;
+    padding: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid var(--FormInput);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--FormColor);
+    border-radius: 3px;
+}
+
+.PatientVitalsContainerTableHeader {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+
+.PatientVitalsContainerTableHeader span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #474646;
+    text-transform: capitalize;
+}
+
+.RageButton {
+    width: 10%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: center;
+    background-color: rgb(99, 99, 253);
+    cursor: pointer;
+}
+
+.RageButton span {
+    font-weight: 600;
+    color: #fff;
+}
+
+.PatientVitalsContainerTableContainer {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+.PatientVitalsContainerTableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.PatientVitalsContainerTableContainer table thead {
+    background-color: rgb(192, 241, 236);
+}
+
+.PatientVitalsContainerTableContainer table thead tr td {
+    padding: 10px 5px;
+    border: 1px solid rgb(198, 198, 198);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.PatientVitalsContainerTableContainer table tbody tr td {
+    padding: 10px 5px;
+    border: 1px solid rgb(208, 207, 207);
+    font-size: 13px;
+}

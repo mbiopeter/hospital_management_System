@@ -1,0 +1,79 @@
+.CurrentMedicationDisplay {
+    width: 80%;
+    height: 100%;
+    background-color: rgb(201, 241, 218);
+}
+
+.CurrentMedicationDisplayHeader {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(141, 213, 172);
+    padding: 0 10px;
+}
+
+.CurrentMedicationDisplayHeaderLabel span {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(96, 94, 94);
+}
+
+.CurrentMedicationDisplayHeaderRadioCheck label {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(96, 94, 94);
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.CurrentMedicationDisplayHeaderRadioCheck input {
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.CurrentMedicationDisplayBody {
+    width: 100%;
+    height: 50%;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.CurrentMedicationDisplayBody table {
+    width: 100%;
+}
+
+.CurrentMedicationDisplayBody table thead {
+    background-color: rgb(130, 210, 198);
+}
+
+.CurrentMedicationDisplayBody table,
+thead,
+tbody,
+tr,
+td {
+    border-collapse: collapse;
+}
+
+.CurrentMedicationDisplayBody table thead td {
+    color: #000;
+}
+
+.CurrentMedicationDisplayBody table td {
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(96, 94, 94);
+    font-weight: 500;
+    padding: 5px 10px;
+    border: 1px solid rgb(122, 175, 145);
+}
+
+.stopMed {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    cursor: pointer;
+}

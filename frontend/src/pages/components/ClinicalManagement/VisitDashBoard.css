@@ -1,0 +1,174 @@
+.VisitDashBoardContainer {
+    width: 85%;
+    transition: 0.3s linear;
+    height: 90vh;
+    overflow-y: auto;
+    background-color: var(--mainBackgroundColor);
+    padding: 0 20px;
+}
+
+.VisitDashBoardContainerHeader {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.VisitDashBoardContainerHeader span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(62, 59, 59);
+}
+
+.VisitDashBoardContainerHeaderIconContainer {
+    height: 25px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px;
+    background-color: rgb(19, 19, 227);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.VisitDashBoardContainerHeaderIconContainerIcon {
+    font-size: 16px;
+    color: #fff;
+}
+
+.VisitDashBoardContainerInner {
+    width: 100%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px grey;
+}
+
+.VisitDashBoardContainerInnerInputsHeader {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(163, 200, 243);
+    padding: 0 5px;
+}
+
+.VisitDashBoardContainerInnerInputsHeaderControl {
+    width: 25%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.VisitDashBoardContainerInnerInputsHeaderControl label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--FormColor);
+    letter-spacing: -0.5px;
+    padding-left: 20px;
+}
+
+.VisitDashBoardContainerInnerInputsHeaderControl .VisitDashboradInput,
+select {
+    width: 45%;
+    outline: none;
+    background-color: transparent;
+    font-size: 12px;
+    padding: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid var(--FormInput);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--FormColor);
+    letter-spacing: -0.5px;
+    border-radius: 3px;
+}
+
+.VisitDashboradInput {
+    width: 30%;
+    margin-left: 20px;
+}
+
+.VisitDashBoardContainerInnerVisitAnalysis {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    margin-top: 3px;
+}
+
+.VisitDashBoardContainerInnerVisitAnalysisContainers {
+    height: 85%;
+    width: 15%;
+    background-color: orange;
+    border-radius: 5px;
+    margin-right: 20px;
+    box-shadow: 0 0 5px #000;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.VisitDashBoardContainerInnerVisitAnalysisContainers span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+}
+
+.VisitDashBoardContainerInnerTablecontainer {
+    width: 100%;
+    max-height: 81.5%;
+    padding: 0 5px;
+}
+
+.VisitDashBoardContainerInnerTablecontainer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.VisitDashBoardContainerInnerTablecontainer table thead {
+    background-color: rgb(192, 241, 236);
+}
+
+.VisitDashBoardContainerInnerTablecontainer table thead tr td {
+    padding: 5px;
+    border: 1px solid rgb(198, 198, 198);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.VisitDashBoardContainerInnerTablecontainer table tbody tr td {
+    padding: 5px;
+    border: 1px solid rgb(208, 207, 207);
+    font-size: 13px;
+}
+
+.VisitDashBoardContainerInnerTablecontainer table tbody tr td button {
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 5px;
+    background-color: rgb(7, 177, 109);
+    border: 1px solid rgb(0, 128, 92);
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+}
+
+.NavColVistDash {
+    width: 70px;
+}
+
+.VisitacknowlegeIcon {
+    font-size: 22px;
+    color: red;
+    padding-left: 10px;
+    cursor: pointer;
+}
