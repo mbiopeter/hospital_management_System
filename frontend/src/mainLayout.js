@@ -33,40 +33,38 @@ const MainLayout = () => {
     } 
     const ActivateHover = (event) =>{
         var name = event.target.id;
-        console.log('clicked');
-        console.log(name);
         if(name === 'Dashboard'){
             setHover('Dashboard');
         }
         if(name === 'Appointment'){
             setHover('Appointment');
         }
-        if(name === 'Patient Registration'){
-            setHover('Patient Registration');
+        if(name === 'Patient_Registration'){
+            setHover('Patient_Registration');
         }
-        if(name === 'Clinical Management'){
-            setHover('Clinical Management');
-        }
-        if(name === 'Clinical Management'){
-            setHover('Clinical Management');
+        if(name === 'Clinical_Management'){
+            setHover('Clinical_Management');
         }
         if(name === 'Emergency'){
             setHover('Emergency');
         }
-        if(name === 'Procedure Room'){
-            setHover('Procedure Room');
+        if(name === 'Procedure_Room'){
+            setHover('Procedure_Room');
         }
-        if(name === 'Operation Theatre'){
-            setHover('Operation Theatre');
+        if(name === 'Operation_Theatre'){
+            setHover('Operation_Theatre');
         }
-        if(name === 'Inpatient Management'){
-            setHover('Inpatient Management');
+        if(name === 'Inpatient_Management'){
+            setHover('Inpatient_Management');
         }
-        if(name === 'Billing and collection'){
-            setHover('Billing and collection');
+        if(name === 'Nurse_Station'){
+            setHover('Nurse_Station');
         }
-        if(name === 'Insuarance and eClaim'){
-            setHover('Insuarance and eClaim');
+        if(name === 'Billing_and_collection'){
+            setHover('Billing_and_collection');
+        }
+        if(name === 'Insuarance_and_eClaim'){
+            setHover('Insuarance_and_eClaim');
         }
         if(name === 'Laboratory'){
             setHover('Laboratory');
@@ -77,8 +75,8 @@ const MainLayout = () => {
         if(name === 'Radiology'){
             setHover('Radiology');
         }
-        if(name === 'Stock Management'){
-            setHover('Stock Management');
+        if(name === 'Stock_Management'){
+            setHover('Stock_Management');
         }
         if(name === 'Reports'){
             setHover('Reports');
@@ -86,38 +84,38 @@ const MainLayout = () => {
         if(name === 'Laundary'){
             setHover('Laundary');
         }
-        if(name === 'Ambulance Management'){
-            setHover('Ambulance Management');
+        if(name === 'Ambulance_Management'){
+            setHover('Ambulance_Management');
         }
-        if(name === 'OutPatient Management'){
-            setHover('OutPatient Management');
+        if(name === 'OutPatient_Management'){
+            setHover('OutPatient_Management');
         }
         if(name === 'EMR'){
             setHover('EMR');
         }
-        if(name === 'Pharmacy Management'){
-            setHover('Pharmacy Management');
+        if(name === 'Pharmacy_Management'){
+            setHover('Pharmacy_Management');
         }
-        if(name === 'Expenses Management'){
-            setHover('Expenses Management');
+        if(name === 'Expenses_Management'){
+            setHover('Expenses_Management');
         }
-        if(name === 'HR and Payroll'){
-            setHover('HR and Payroll');
+        if(name === 'HR_and_Payroll'){
+            setHover('HR_and_Payroll');
         }
-        if(name === 'Inventory and purchase'){
-            setHover('Inventory and purchase');
+        if(name === 'Inventory_and_purchase'){
+            setHover('Inventory_and_purchase');
         }
-        if(name === 'User Management'){
-            setHover('User Management');
+        if(name === 'User_Management'){
+            setHover('User_Management');
         }
-        if(name === 'Word and Bed Management'){
-            setHover('Word and Bed Management');
+        if(name === 'Word_and_Bed_Management'){
+            setHover('Word_and_Bed_Management');
         }
-        if(name === 'Asset Management'){
-            setHover('Asset Management');
+        if(name === 'Asset_Management'){
+            setHover('Asset_Management');
         }
-        if(name === 'Queue and Waiting'){
-            setHover('Queue and Waiting');
+        if(name === 'Queue_and_Waiting'){
+            setHover('Queue_and_Waiting');
         }
         if(name === 'Telemedicine'){
             setHover('Telemedicine');
@@ -126,10 +124,25 @@ const MainLayout = () => {
             setHover('FeedBack');
         }
     }   
+    const navigate = useNavigate();
+    const [name, setName] =useState('');
+    axios.defaults.withCredentials = true;
+    useEffect(() => {
+        axios.get('http://localhost:8080/login/')
+        .then(res => {
+            if(res.data.valid){
+                setName(res.data.Username)
+            }
+            else{
+                navigate('/')
+            }
+        })
+        .catch(err => console.log(err));
+    }, [])
     return(
         <div style={{width:'100%', height:'100%',display:'flex',flexWrap:'wrap'}}>
-            <UpNav toggleExpand={toggleExpand} ToggleMobileSize={ToggleMobileSize} expand={expand} />
-            <SideNav ActivateHover={ActivateHover} toggleExpand={toggleExpand} ToggleMobileSize={ToggleMobileSize} expand={expand} />
+            <UpNav name={name} toggleExpand={toggleExpand} ToggleMobileSize={ToggleMobileSize} expand={expand} />
+            <SideNav hover={hover} ActivateHover={ActivateHover} toggleExpand={toggleExpand} ToggleMobileSize={ToggleMobileSize} expand={expand} />
 
             <Routes>
                 <Route path="/Dashboard" element={<Main expand={expand}  ActivateHover={ActivateHover} hover={hover}/>} />

@@ -7,15 +7,15 @@ import { Link } from "react-router-dom";
 const Main = ({expand,ActivateHover}) => {
     return(
         <div style={(expand === false) ? {maxWidth: '95%'} :null} className="DashboardMain">
-            <div className="DashboardMainHeader">
+            <div  className="DashboardMainHeader">
                 <span>Dashboard</span>
             </div>
 
            <div className="DashBoardMainInner">
                 <Link to="/Appointment" style={{ textDecoration: 'none' }}>
-                    <div className="dashBoardNavContainer">
-                        <div onClick={ActivateHover} className="dashBoardIcon" id='peter'>
-                            <FaRegCalendarPlus className='dashBoardActualIcon'/>
+                    <div id='Appointment'  className="dashBoardNavContainer">
+                        <div className="dashBoardIcon">
+                            <FaRegCalendarPlus onClick={ActivateHover}className='dashBoardActualIcon'/>
                         </div>
                         <div className="IconName">
                             <span onClick={ActivateHover} >Appointment</span>

@@ -18,6 +18,7 @@ export const VaridateUserCredentials = async (req, Username, Password, Token, Lo
         const results = await getUserCredentials(Username, Password, Token, LoginTime);
         if(results  && results.length > 0){
             req.session.Username = Username;
+            console.log(req.session.Username);
             return {Login : true, Username: Username}
         }
         else{
@@ -26,5 +27,13 @@ export const VaridateUserCredentials = async (req, Username, Password, Token, Lo
     }
     catch (err){
         throw err;
+    }
+}
+export const UserSession = (req,res) => {
+    if(req.session.Username){
+        return res.json({valid: true, Username: req.session.Username})
+    }
+    else{
+        return res.json({valid: false})
     }
 }

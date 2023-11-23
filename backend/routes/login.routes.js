@@ -1,4 +1,5 @@
 import { ControlUserCredentials } from "../controllers/login.controller.js";
+import { SessionController } from "../controllers/login.controller.js";
 import express from "express";
 
 export const router = express.Router();
@@ -12,4 +13,14 @@ router.post('/', ControlUserCredentials, (req, res) => {
     throw err
   }
 });
+//http://localhost:${port}/
+router.get('/', SessionController, (req,res) => {
+  try{
+    res.json();
+  }
+  catch (err) {
+    throw err;
+  }
+})
+
 

@@ -4,7 +4,7 @@ import hospital from '../images/hospital.png';
 import { FaCircleUser } from "react-icons/fa6";
 import { FaSignOutAlt,FaCog } from 'react-icons/fa';
 import {MdViewDay } from "react-icons/md";
-const UpNav = ({toggleMobile,ToggleMobileSize,userName}) => {
+const UpNav = ({toggleMobile,ToggleMobileSize,name}) => {
     return(
         <div className="upNavContainer">
             <div className='UpNavToggleMoble' style={(toggleMobile === true) ? {display: 'block'} : (toggleMobile === false) ? {display: 'none'} : null}>
@@ -23,7 +23,7 @@ const UpNav = ({toggleMobile,ToggleMobileSize,userName}) => {
                     </div>
                 </div>
                 <div className="UserDetailsContainer">
-                    <span>{userName}</span>
+                    <span style={{textTransform:'uppercase'}}>{name}</span>
                     <FaCircleUser className='HeaderRightMostIcons'/>
                     <FaCog className='HeaderRightMostIcons'/>
                     <FaSignOutAlt className='HeaderRightMostIcons'/>

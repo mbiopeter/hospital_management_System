@@ -9,11 +9,10 @@ export const registerUser = async (UserName, FirstName, LastName, TokenNumber, M
     SELECT * 
     FROM users WHERE
     Email = ? OR 
-    MobileNumber = ? OR
-    TokenNumber = ?
+    MobileNumber = ?
     `;
     try {
-        const [CheckUserExistence] =  await db.query(SelectQuery,[Email,MobileNumber,TokenNumber])
+        const [CheckUserExistence] =  await db.query(SelectQuery,[Email,MobileNumber])
         if(CheckUserExistence.length <= 0){
             const [result] = await db.query(InsertQuery,[UserName, FirstName, LastName, TokenNumber, MobileNumber, Email, Password,RegDate ]);
             return result

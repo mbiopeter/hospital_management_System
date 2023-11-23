@@ -3,8 +3,10 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { db } from "./db.js";
 import bodyParser from 'body-parser';
+import cookieParser from 'cookie-parser';
 import { ErrorHandler } from './erroTracker/login.error.js';
 import { sessionMiddleware } from './services/login.services.js';
+
 
 import { AuthRouter } from './middleware/login.middleware.js';
 import { RegRouter } from './middleware/addUser.middleware.js';
@@ -16,9 +18,10 @@ const app = express();
 app.use(cors({
     origin: 'http://localhost:3000',
     optionsSuccessStatus: 200,
+    methods: ["POST", "GET"],
     credentials: true,
 }));
-
+app.use(cookieParser())
 app.use(sessionMiddleware);
 app.use(bodyParser.json());
 

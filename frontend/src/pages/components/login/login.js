@@ -9,9 +9,9 @@ const Login = () => {
     const navigate = useNavigate();
     const [error,setError] = useState('');
     const [values,setValues] = useState({
-        Username:'',
-        Password:'',
-        Token:'',
+        username:'',
+        password:'',
+        token:'',
     });
     const handleInput = (event) => {
         setValues(prev => ({...prev, [event.target.name]: [event.target.value]}))
@@ -43,8 +43,8 @@ const Login = () => {
                 <div className="loginFormBody">
                     <form method='post' onSubmit={handleSubmit}>
                         <input autoComplete='off' type="text" placeholder='Username' onChange={handleInput} name='username'/>
-                        <input autoComplete='off' type="password" placeholder='Password' onChange={handleInput} name='Password'/>
-                        <input autoComplete='off' type="text" placeholder='Token Number' onChange={handleInput} name='Token'/>
+                        <input autoComplete='off' type="password" placeholder='Password' onChange={handleInput} name='password'/>
+                        <input autoComplete='off' type="text" placeholder='Token Number' onChange={handleInput} name='token'/>
                         <div className="LoginFormError" style={(error === 'null') ? {display:'none'}:null}>
                             <span>{error}</span>
                         </div>
