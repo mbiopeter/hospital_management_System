@@ -61,6 +61,7 @@
     flex-direction: row;
     margin-bottom: 10px;
     align-content: flex-start;
+    box-shadow: 0 0 5px #6a6969;
 }
 
 .dashBoardNavContainer {
