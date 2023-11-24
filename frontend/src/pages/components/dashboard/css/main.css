@@ -6,7 +6,7 @@
 
 :root {
     --mainBackgroundColor: rgb(204, 204, 255);
-    --DashBoardMainInner: hsl(0, 0%, 100%);
+    --DashBoardMainInner: rgb(225, 255, 255);
     --DashBoardIconsContainer: #edfafa;
 }
 

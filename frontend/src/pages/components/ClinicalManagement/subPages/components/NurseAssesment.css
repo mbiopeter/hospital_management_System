@@ -4,7 +4,7 @@
 }
 
 .NurseAssesmentDisplay {
-    background-color: rgb(201, 241, 218);
+    background-color: rgb(225, 255, 255);
 }
 
 .NurseAssesmentDisplayContainer {
@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: rgb(141, 213, 172);
+    background-color: rgb(210, 245, 245);
 }
 
 .NurseAssesmentDisplayContainer label {

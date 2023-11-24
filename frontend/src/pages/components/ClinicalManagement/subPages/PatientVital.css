@@ -160,7 +160,7 @@ select {
 }
 
 .PatientVitalsContainerDescription input {
-    width: 91.5%;
+    width: 84%;
     outline: none;
     background-color: transparent;
     font-size: 12px;

@@ -21,7 +21,8 @@
 }
 
 .loginFormHeader img {
-    height: 60px;
+    height: 100px;
+        opacity: 0.5;
 }
 
 .loginFormBody {
@@ -98,4 +99,31 @@
 .LoginFormError span {
     font-size: 12px;
     color: red;
+}
+.logoFloater {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    z-index: .5;
+}
+
+.logoFloater img {
+    width: 300px;
+    height: 280px;
+    opacity: .2;
+    border-radius: 10px;
+}
+
+.logoFloaterUderLayer {
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: linear-gradient(blue, lime, gold);
+    opacity: .7;
 }

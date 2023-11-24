@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import PatientRegistration from './pages/components/patientRegistration/patientRegistration'; 
 import Billing from './pages/components/Billing/Billing';
 import VisitDashBoard from './pages/components/ClinicalManagement/VisitDashBoard';
+import History from './pages/components/ClinicalManagement/subPages/History';
 import PatientVitals from './pages/components/ClinicalManagement/subPages/PatientVital';
 import Immunization from './pages/components/ClinicalManagement/subPages/immunizion';
 import ClinicalOthers from './pages/components/ClinicalManagement/subPages/ClinicalOthers';
@@ -150,6 +151,7 @@ const MainLayout = () => {
                 <Route path="/Billind_collection" element={<Billing  expand={expand}/>} />
                 <Route path="/ClinicalManagemnt" element={<VisitDashBoard  expand={expand}/>} />
                 <Route path="/PatientVitals" element={<PatientVitals  expand={expand}/>} />
+                <Route path="/History" element={<History  expand={expand}/>} />
                 <Route path="/immunization" element={<Immunization  expand={expand}/>} />
                 <Route path="/ClinicalManagementOthers" element={<ClinicalOthers  expand={expand}/>} />
                 <Route path="/ClinicalManagementOthers/NurseAssesment" element={<NurseAssesment  expand={expand}/>} />                

@@ -5,6 +5,7 @@ import $ from 'jquery';
 import PatientClinicalManagement from './patientClinicalManagementNav';
 import RightOtherNav from './RightOtherNav';
 import { useEffect, useState } from 'react';
+import ProcedureSelect from './customes/ProcedureSelect';
 const Procedure = ({expand}) => {
     const [Textarea,SetTeatarea] = useState(true);
     const HandleProcedureDescription = () => {
@@ -45,7 +46,7 @@ const Procedure = ({expand}) => {
                         </div>
                         <div className="ProcedureContainerBodyContainer">
                             <label htmlFor="Procedure">Investigation/Procedure</label>
-                            <input type="text" />
+                            <ProcedureSelect />
                             <div className="ProcedureAddIconContainer">
                                 <span>+</span>
                             </div>

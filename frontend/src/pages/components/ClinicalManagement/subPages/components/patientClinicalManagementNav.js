@@ -8,8 +8,10 @@ const PatientClinicalManagement = ({vitalHeader,Vitals,immunization}) => {
                 <span>Medical records</span>
             </div>
             <div className="PatientVitalsContainerInnerHeaderButtons">
-                <FaRegAddressBook className="PatientVitalsContainerInnerHeaderButtonsIcon"/>
-                <span>History</span>
+                <Link to="/History" style={{textDecoration:'none'}} >
+                    <FaRegAddressBook className="PatientVitalsContainerInnerHeaderButtonsIcon"/>
+                    <span>History</span>
+                </Link>
             </div>
             <div className="PatientVitalsContainerInnerHeaderButtons" onClick={Vitals} style={(vitalHeader === 'Vitals') ? {backgroundColor:'gold'}:null}>
                 <Link to="/PatientVitals" style={{textDecoration:'none'}} >

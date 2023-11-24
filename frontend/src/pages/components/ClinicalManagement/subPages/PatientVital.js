@@ -42,6 +42,10 @@ const PatientVitals = ({expand}) => {
                             <label htmlFor="Systolic">Blood Sugar(R)</label>
                             <input type="text" />
                         </div>
+                        <div className="PatientVitalsContainerVitalBodyColControl">
+                            <label htmlFor="Systolic">Blood Sugar(R)</label>
+                            <input type="text" />
+                        </div>
                     </div>
                     <div className="PatientVitalsContainerVitalBodyCol">
                         <div className="PatientVitalsContainerVitalBodyColControl">
@@ -76,10 +80,6 @@ const PatientVitals = ({expand}) => {
                         </div>
                         <div className="PatientVitalsContainerVitalBodyColControl">
                             <label htmlFor="Systolic">Mobility</label>
-                            <input type="text" />
-                        </div>
-                        <div className="PatientVitalsContainerVitalBodyColControl">
-                            <label htmlFor="Systolic">Systolic B.P</label>
                             <input type="text" />
                         </div>
                         <div className="PatientVitalsContainerVitalBodyColControl">

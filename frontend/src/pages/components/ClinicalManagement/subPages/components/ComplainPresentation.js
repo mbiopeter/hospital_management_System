@@ -2,6 +2,7 @@ import '../ClinicalOthers.css';
 import './ComplainPresentation.css';
 import PatientClinicalManagement from './patientClinicalManagementNav';
 import RightOtherNav from './RightOtherNav';
+import ComplainSelect from './customes/ComplainSelect';
 const ComplainPresentation = ({expand}) => {
     return(
         <div className="ClinicalOthersContainer" style={(expand === false) ? {minWidth: '95%'} :null}>
@@ -27,7 +28,7 @@ const ComplainPresentation = ({expand}) => {
                                 <span>Presenting Complain</span>
                             </div>
                             <div className="ComplainPresentationBodyDisplay">
-                                <input type="text" />
+                                <ComplainSelect />
                                 <div className="ComplainPresentationAddIconContainer">
                                     <span>+</span>
                                 </div>

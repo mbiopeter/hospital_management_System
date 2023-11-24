@@ -1,7 +1,8 @@
 import './login.css';
-import logo from '../../../images/logo.png';
+import hospital from '../../../images/hospital.png';
 import { FaSignOutAlt } from 'react-icons/fa';
 import background from '../../../images/background.png';
+import CureCoder  from '../../../images/CureCoder.png';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -36,9 +37,15 @@ const Login = () => {
 
     return(
         <div className='loginContainer'>
+            <div className="logoFloater">
+                <img src={CureCoder}/>
+            </div>
+            <div className="logoFloaterUderLayer">
+
+            </div>
             <div className="loginForm">
                 <div className="loginFormHeader">
-                    <img src={logo} alt='none'/>
+                    <img src={hospital} alt='none'/>
                 </div>
                 <div className="loginFormBody">
                     <form method='post' onSubmit={handleSubmit}>

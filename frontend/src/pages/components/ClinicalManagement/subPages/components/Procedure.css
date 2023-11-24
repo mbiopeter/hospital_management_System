@@ -1,7 +1,7 @@
 .ProcedureContainer {
     width: 80%;
     height: 100%;
-    background-color: rgb(201, 241, 218);
+    background-color: rgb(225, 255, 255);
 }
 
 .ProcedureContainerHeader {
@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(141, 213, 172);
+    background-color: rgb(210, 245, 245);
     padding: 0 10px;
 }
 
@@ -40,7 +40,7 @@
 
 .ProcedureContainerBodyContainer {
     width: 100%;
-    padding: 0 10px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -53,18 +53,6 @@
     color: rgb(96, 94, 94);
     margin-left: 10px;
     margin-right: 70px;
-}
-
-.ProcedureContainerBodyContainer input {
-    margin: 6px 0;
-    width: 60%;
-    outline: none;
-    border: 1px solid grey;
-    font-size: 13px;
-    font-weight: 500;
-    padding: 5px;
-    background-color: transparent;
-    color: rgb(96, 94, 94);
 }
 
 .ProcedureAddIconContainer {

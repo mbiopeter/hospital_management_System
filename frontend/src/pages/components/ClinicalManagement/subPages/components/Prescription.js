@@ -3,7 +3,7 @@ import './Prescription.css';
 import {FaTimes,FaSave} from "react-icons/fa";
 import PatientClinicalManagement from './patientClinicalManagementNav';
 import RightOtherNav from './RightOtherNav';
-import CustomInput from './customes/SelectInput';
+import CustomInput from './customes/PrescriptionSelectInput';
 import $ from 'jquery';
 import { useEffect } from 'react';
 const Prescription = ({expand}) => {

@@ -5,14 +5,15 @@
 }
 
 .customInputContainer input {
-    width: 100%;
+    width: 95%;
     outline: none;
     border: 1px solid grey;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
-    padding: 2px;
+    padding: 4px;
+        border-radius: 3px;
     background-color: transparent;
-    color: rgb(96, 94, 94);
+    color: rgb(110, 108, 108);
 }
 
 .optionsOverlay {
@@ -20,13 +21,14 @@
     top: 100%;
     left: 0;
     z-index: 1000;
-    background-color: rgb(167, 232, 191);
-    border: 1px solid #53cd76;
+    background-color: rgb(201, 255, 255);
+        border: 1px solid rgb(172, 241, 241);
+        ;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-height: 200px;
     overflow-y: auto;
-    width: 100%;
+    width: 95%;
 }
 
 .optionsOverlay div {
@@ -36,5 +38,6 @@
 }
 
 .optionsOverlay div:hover {
-    background-color: #52e770;
+    background-color: rgb(155, 252, 252);
+        color: rgb(74, 133, 133);
 }

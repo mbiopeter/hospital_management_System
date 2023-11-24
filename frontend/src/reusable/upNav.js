@@ -1,5 +1,5 @@
 import './css/upNav.css';
-import logo from '../images/logo.png';
+import CureCoder from '../images/CureCoder.png';
 import hospital from '../images/hospital.png';
 import { FaCircleUser } from "react-icons/fa6";
 import { FaSignOutAlt,FaCog } from 'react-icons/fa';
@@ -11,7 +11,7 @@ const UpNav = ({toggleMobile,ToggleMobileSize,name}) => {
                 <MdViewDay onClick={ToggleMobileSize} className='ExpandMobile'/>
             </div>
             <div className="logoContainer">
-                <img src={logo} />
+                <img src={CureCoder} />
             </div>
             <div className="HeaderRightContainer">
                 <div className="hospitalDetailsContainer">
