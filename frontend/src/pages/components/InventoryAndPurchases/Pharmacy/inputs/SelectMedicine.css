@@ -1,0 +1,42 @@
+.SelectMedicineContainer {
+    position: relative;
+    display: inline-block;
+    width: 84%;
+}
+
+.SelectMedicineContainer input {
+    width: 100%;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px;
+    background-color: transparent;
+    color: rgb(110, 108, 108);
+}
+
+.SelectMedicineContainerOptionsOverlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: rgb(201, 255, 255);
+    border: 1px solid rgb(172, 241, 241);
+    ;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.SelectMedicineContainerOptionsOverlay div {
+    padding: 8px;
+    cursor: pointer;
+    transition: .5s linear;
+}
+
+.SelectMedicineContainerOptionsOverlay div:hover {
+    background-color: rgb(155, 252, 252);
+    color: rgb(74, 133, 133);
+}

@@ -18,7 +18,7 @@ import Diagnosis from './pages/components/ClinicalManagement/subPages/components
 import Procedure from './pages/components/ClinicalManagement/subPages/components/Procedure';
 import Prescription from './pages/components/ClinicalManagement/subPages/components/Prescription';
 import Advice from './pages/components/ClinicalManagement/subPages/components/Advice';
-import { InventoryMain } from './pages/components/Inventory and purchases/InventoryMain';
+import { InventoryMain } from './pages/components/InventoryAndPurchases/InventoryMain';
 const MainLayout = () => {
     const [hover,setHover] = useState('Dashboard');
     const [expand,setExpand] = useState(true);

@@ -1,0 +1,228 @@
+.OncounterSaleContainer {
+    width: 80%;
+    height: 100%;
+    background-color: rgb(233, 255, 255);
+    border-radius: 0 10px 10px 0;
+}
+
+.OncounterSaleContainerHeader {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(199, 249, 249);
+    padding: 0 10px;
+    border-radius: 0 10px 0 0;
+    justify-content: space-between;
+}
+
+.OncounterSaleContainerHeaderRight {
+    display: flex;
+
+}
+
+.OncounterSaleContainerHeader span {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: rgb(46, 45, 45);
+}
+
+.SaveMedicationIconContainer {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 3px;
+}
+
+.SaveMedicationIcon {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.SaveMedicationIconContainer span {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.OncounterSaleContainerMiddle {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+}
+
+.OncounterSaleContainerMiddleCol {
+    height: 100%;
+    width: 33.33%;
+}
+
+.OncounterSaleContainerMiddleCol:first-child {
+    padding-right: 20px;
+}
+
+.OncounterSaleContainerMiddleCol:nth-child(2) {
+    padding-right: 20px;
+}
+
+.OncounterSaleContainerMiddleColFormControl {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.controlSearch {
+    width: 50%;
+    display: flex;
+}
+
+.controlSearch input {
+    width: 70%;
+    margin-right: 10px;
+}
+
+.OncounterSaleContainerMiddleColFormControlIconContainer {
+    width: 35px;
+    height: 22px;
+    background-color: blue;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OncounterSaleContainerMiddleColFormControlIcon {
+    font-size: 15px;
+    color: #fff;
+}
+
+.OncounterSaleContainerMiddleColFormControl label {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(96, 94, 94);
+}
+
+.OncounterSaleContainerMiddleColFormControl input,
+select {
+    width: 50%;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 2px;
+    background-color: transparent;
+    color: rgb(96, 94, 94);
+}
+
+.OncounterSaleContainerMedication {
+    width: 100%;
+    background-color: rgb(129, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+.OncounterSaleContainerMedicationItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+
+.OncounterSaleContainerMedicationItem input {
+    width: 84%;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 2px;
+    background-color: transparent;
+    color: rgb(96, 94, 94);
+}
+
+.OncounterSaleContainerMedicationItem label {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(96, 94, 94);
+}
+
+.OncounterSaleContainerMedicationCols {
+    width: 33.3%;
+}
+
+.OncounterSaleContainerMedicationColsFormControl {
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.OncounterSaleContainerMedicationColsFormControl label {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(96, 94, 94);
+}
+
+.OncounterSaleContainerMedicationColsFormControl input {
+    width: 50%;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 2px;
+    background-color: transparent;
+    color: rgb(96, 94, 94);
+}
+
+.OncounterSaleContainerTable {
+    width: 100%;
+    padding: 10px;
+    height: 30%;
+    overflow-y: auto;
+}
+
+.OncounterSaleContainerTable table {
+    width: 100%;
+}
+
+.OncounterSaleContainerTable table thead {
+    background-color: rgb(103, 204, 170);
+}
+
+.OncounterSaleContainerTable table thead td {
+    color: #000;
+}
+
+.OncounterSaleContainerTable table td {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(96, 94, 94);
+    padding: 5px;
+    border: 1px solid rgb(75, 148, 124);
+}
+
+.OncounterSaleContainerTable table,
+thead,
+tbody,
+tr,
+td {
+    border-collapse: collapse;
+}
+
+.RemoveMedication {
+    color: red;
+    cursor: pointer;
+}
