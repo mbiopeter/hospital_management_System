@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from "react-router-dom";
 import './InventoryNav.css';
 import { FaAngleRight ,FaAngleDown,FaAngleDoubleRight  } from "react-icons/fa";
-export const InventoryNav = () => {
+export const InventoryNav = ({HandleInventoryNav}) => {
     const [Pharmacy,SetPharmacy] = useState(false);
     const HandleEpandPharmacy = () => {
         SetPharmacy(!Pharmacy);
@@ -27,11 +27,11 @@ export const InventoryNav = () => {
                 </div>
                 <div className="InventoryNavContainerListContainerAfterClick" style={(Pharmacy === false) ? {height:'0',display:'none'}: null}>
                     <ul>
-                        <li><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Patient Medicine</li>
-                        <li><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Medicine Production</li>
-                        <li><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Medicine Verification</li>
-                        <li><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Medicine Storage</li>
-                        <li><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Monitoring Stock Level</li>
+                        <li onClick={HandleInventoryNav} id='PatientMedication'><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Patient Medicine</li>
+                        <li onClick={HandleInventoryNav}><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Medicine Production</li>
+                        <li onClick={HandleInventoryNav}><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Medicine Verification</li>
+                        <li onClick={HandleInventoryNav}><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Medicine Storage</li>
+                        <li onClick={HandleInventoryNav}><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Monitoring Stock Level</li>
                     </ul>
                 </div>
             </div>

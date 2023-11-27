@@ -5,7 +5,7 @@ import {FaSearch} from "react-icons/fa";
 import {FaTimes,FaSave} from "react-icons/fa";
 import SelectMedicine from './inputs/SelectMedicine';
 import $ from 'jquery';
-export const OncounterSale = () => {
+export const OncounterSale = ({InventoryNavStatus}) => {
     const [SaleType,SetSaleType] = useState('');
     const HandleSaleType = (e) => {
         var Type = e.target.value;
@@ -22,7 +22,7 @@ export const OncounterSale = () => {
             row.fadeOut(1000);
         });
     }, []);
-    return(
+    return(InventoryNavStatus === 'PatientMedication' &&
         <div className="OncounterSaleContainer">
             <SearchMedicationPatient SearchPatientPop={SearchPatientPop} toggleSearchPatient= {toggleSearchPatient} />
             <div className="OncounterSaleContainerHeader">
