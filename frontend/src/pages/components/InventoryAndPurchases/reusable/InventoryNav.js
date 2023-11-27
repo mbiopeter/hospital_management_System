@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import './InventoryNav.css';
 import { FaAngleRight ,FaAngleDown,FaAngleDoubleRight  } from "react-icons/fa";
 export const InventoryNav = () => {
@@ -26,8 +27,7 @@ export const InventoryNav = () => {
                 </div>
                 <div className="InventoryNavContainerListContainerAfterClick" style={(Pharmacy === false) ? {height:'0',display:'none'}: null}>
                     <ul>
-                        <li><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Oncounter Sale</li>
-                        <li><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Despence Medicine</li>
+                        <li><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Patient Medicine</li>
                         <li><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Medicine Production</li>
                         <li><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Medicine Verification</li>
                         <li><FaAngleDoubleRight className='InventoryNavContainerListContainerAfterClickIcon'/>Medicine Storage</li>

@@ -162,7 +162,8 @@ const MainLayout = () => {
                 <Route path="/ClinicalManagementOthers/Procedure" element={<Procedure  expand={expand}/>} />                
                 <Route path="/ClinicalManagementOthers/Prescription" element={<Prescription  expand={expand}/>} />                
                 <Route path="/ClinicalManagementOthers/Advice" element={<Advice  expand={expand}/>} />                
-                <Route path="/Inventory_purchase" element={<InventoryMain  expand={expand}/>} />                
+                <Route path="/Inventory_purchase" element={<InventoryMain  expand={expand}/>} /> 
+
             </Routes>
         </div>
     )
